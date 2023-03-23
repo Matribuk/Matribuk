@@ -8,7 +8,7 @@
 
 <br>
 
-- Currently learning Web Development by PoC Innovation
+- Currently learning Software & P2P by PoC Innovation
 - I’m currently open for an Intern or a new job opportunity.
 
 <br><br>
