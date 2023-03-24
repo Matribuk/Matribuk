@@ -15,7 +15,6 @@
 
 <br>
 
-
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"><b> Github Stats </b>
 <br>
 
@@ -30,8 +29,14 @@
 
 <br>
 <br>
-<br>
-<br>
+<p align=center>
+  <a href="https://www.epitech.eu">
+      <img src="https://img.shields.io/badge/Epitech-1a2b6d?style=for-the-badge&logo=/e/&logoColor=white">
+  </a>
+  <a href="https://github.com/PoCInnovation">
+      <img src="https://img.shields.io/badge/PoC Innovation-36454F?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+</p>
 
 ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="25"><b> Skills</b>
 <br>
