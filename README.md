@@ -15,6 +15,8 @@
   </a>
 </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=matribuk&show_icons=true&locale=en&layout=compact&theme=neon" alt="matribuk" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=matribuk&show_icons=true&locale=en&theme=neon" alt="matribuk" /></p>
+<p align='center'>
+  <img src="https://github-readme-stats.vercel.app/api?username=matribuk&show_icons=true&count_private=true&theme=neon" width="60%" />
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matribuk&theme=neon&layout=compact&langs_count=6" width="50%" />
+</p>
