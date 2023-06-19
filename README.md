@@ -8,10 +8,10 @@
 
 <p align=center>
   <a href="https://www.epitech.eu">
-      <img src="https://img.shields.io/badge/Epitech-4deeea?style=for-the-badge&logo=/e/&logoColor=white">
+      <img src="https://img.shields.io/badge/Epitech-4deeea?style=for-the-badge&logo=/e/&logoColor=black">
   </a>
   <a href="https://github.com/PoCInnovation">
-      <img src="https://img.shields.io/badge/PoC Innovation-f000ff?style=for-the-badge&logo=github&logoColor=black">
+      <img src="https://img.shields.io/badge/PoC Innovation-f000ff?style=for-the-badge&logo=github&logoColor=white">
   </a>
 </p>
 
