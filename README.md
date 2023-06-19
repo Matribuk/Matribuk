@@ -1,8 +1,8 @@
 <h1 align="center">Hi 👋, I'm Antonin Leprest</h1>
 <h3 align="center">A learner Fullstack and Devops developper</h3>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
+<h3 align="center">Connect with me:</h3>
+<p align='center'>
 <a href="https://linkedin.com/in/antonin-leprest-9095b2235" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="antonin leprest" height="30" width="40" /></a>
 </p>
 
