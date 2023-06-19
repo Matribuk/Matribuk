@@ -1,8 +1,8 @@
 <h1 align="center">Hi 👋, I'm Antonin Leprest</h1>
 <h3 align="center">A learner Fullstack and Devops developper</h3>
 
-<h3 align="center">Connect with me:</h3>
-<p align='center'>
+<h3 align="left">Connect with me:</h3>
+<p align='left'>
 <a href="https://linkedin.com/in/antonin-leprest-9095b2235" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="antonin leprest" height="30" width="40" /></a>
 </p>
 
@@ -15,7 +15,7 @@
   </a>
 </p>
 
-<p align='center'>
+<p align='right'>
   <img src="https://github-readme-stats.vercel.app/api?username=matribuk&show_icons=true&count_private=true&theme=neon" width="60%" />
   <br/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matribuk&theme=neon&layout=compact&langs_count=6" width="50%" />
