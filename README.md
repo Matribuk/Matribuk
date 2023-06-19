@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/badge/LinkedIn-0abdc6?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
   <a href="https://www.epitech.eu">
-      <img src="https://img.shields.io/badge/Epitech-133e7c?style=for-the-badge&logo=/e/&logoColor=black">
+      <img src="https://img.shields.io/badge/Epitech-133e7c?style=for-the-badge&logo=/e/&logoColor=white">
   </a>
   <a href="https://github.com/PoCInnovation">
       <img src="https://img.shields.io/badge/PoC Innovation-ea00d9?style=for-the-badge&logo=github&logoColor=white">
