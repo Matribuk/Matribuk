@@ -13,7 +13,7 @@
   </a>
 </p>
 
-<p align='right'>
+<p align='center'>
   <img src="https://github-readme-stats.vercel.app/api?username=matribuk&show_icons=true&count_private=true&theme=neon" width="60%" />
   <br/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matribuk&theme=neon&layout=compact&langs_count=6" width="50%" />
