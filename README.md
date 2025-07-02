@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/GitHub-matribuk-181717?style=for-the-badge&logo=github&logoColor=white">
   </a>
   <a href="https://www.epitech.eu" target="_blank">
-    <img src="https://img.shields.io/badge/Epitech-Alumni-1a2b6d?style=for-the-badge">
+    <img src="https://img.shields.io/badge/Epitech-Student-1a2b6d?style=for-the-badge">
   </a>
   <a href="https://github.com/PoCInnovation" target="_blank">
     <img src="https://img.shields.io/badge/PoC%20Innovation-Member-36454F?style=for-the-badge">
