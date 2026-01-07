@@ -68,23 +68,23 @@
 ### 🏆 Featured Projects
 
 #### 🎮 Computer Graphics & Game Development
-- 🖼️ **[ULaval-BlenderLike](https://github.com/Matribuk/ULaval-BlenderLike)** — Comprehensive 3D graphics application (C++, OpenGL, openFrameworks)
+- 🖼️ **[ULaval-BlenderLike](https://github.com/Matribuk/ULaval-BlenderLike)** — Comprehensive 3D graphics application (C++, OpenGL, openFrameworks) - 2025 project
   - Ray tracing, PBR materials, scene graph, interactive transformations
   - 2D/3D primitives, texture mapping, advanced lighting models
   - Academic project showcasing computer graphics fundamentals
   
-- 🏎️ **[TekosKart](https://github.com/Matribuk/TekosKart)** — Mario Kart-inspired racing game server (C)
+- 🏎️ **[TekosKart](https://github.com/Matribuk/TekosKart)** — Mario Kart-inspired racing game server (C) - 2024 project
   - 3D track generation using Bézier curves
   - Multiplayer support, multiple game modes
   - Custom map loading and configuration
 
 #### 🔧 DevOps & Backend
-- 🔒 **[SecureEnv](https://github.com/PoCInnovation/SecureEnv)** — Environment variable management tool (Go)
+- 🔒 **[SecureEnv](https://github.com/PoCInnovation/SecureEnv)** — Environment variable management tool (Go) - 2023 project
   - Secure team synchronization with encryption
   - REST APIs and crypto implementation
   - PoC Innovation project
 
-- 🤖 **[Personal-robix_remote](https://github.com/Matribuk/Personal-robix_remote)** — Remote robotics control system (Go)
+- 🤖 **[Personal-robix_remote](https://github.com/Matribuk/Personal-robix_remote)** — Local website to access ChatGPT (Go) 2023 project
 
 #### 🌐 Web & Mobile
 - 🗺 **Dreamfetch Map Server** — TileServer GL integration for optimized map delivery
