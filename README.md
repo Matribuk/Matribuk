@@ -46,7 +46,6 @@
   <img src="https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
   <img src="https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white" />
   <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
   <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/-OpenGL-5586A4?style=flat-square&logo=opengl&logoColor=white" />
 </p>
@@ -104,7 +103,7 @@
 
 - 🎨 Advanced ray tracing and PBR rendering techniques
 - 🤖 AI integration with MCP (Model Context Protocol)
-- 🐳 Cloud-native architectures with Docker & Kubernetes
+- 🐳 Cloud-native architectures with Docker
 - 🎮 Real-time 3D graphics and game engine development
 
 ---
