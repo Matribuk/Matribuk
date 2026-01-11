@@ -24,7 +24,7 @@
 ### 🚀 About Me
 
 - 🧠 **Ex-R&D Engineer at VALRAISO** — Enhancing AI-driven e-commerce capabilities:
-  - Designing and improving **NLP pipelines**, annotating gold data and generating silver datasets for embedding model, also training and evaluation.
+  - Designing and improving **NLP pipelines**, **annotating** gold data and generating silver datasets for embedding model, also **training** and **evaluation**.
   - Actively involved in implementing **Model Context Protocol (MCP)**—a standardized method that connects LLMs to internal data tools, enabling secure, context-aware AI integrations.
   
 - 💻 **Freelance Fullstack Developer at Dreamfetch** — Flutter, Dart, Rust, Docker, PostgreSQL, map servers, performance optimization.
