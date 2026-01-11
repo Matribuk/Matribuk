@@ -35,7 +35,7 @@
 
 - 📚 **Former Teaching Assistant at Epitech** — Supporting students, sharing knowledge in tech topics.
 
-- 🎓 **Computer Graphics Studies** — Currently working on advanced 3D rendering projects at Université Laval (IFT3100 Infographie).
+- 🎓 **Computer Graphics Course - Université Laval** — Completed working on advanced 3D rendering projects at Université Laval (IFT3100 Infographie).
 
 - 🔐 **Cybersecurity Course - Université Laval** — Completed hands-on labs in penetration testing and network security (IFT-3201):
   - **TP1 - Network Analysis (Wireshark)**: Traffic filtering, packet analysis, password interception, ARP poisoning (109.38%)
