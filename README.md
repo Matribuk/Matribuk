@@ -5,6 +5,9 @@
   <a href="https://www.linkedin.com/in/antonin-leprest-9095b2235" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Antonin%20Leprest-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
+  <a href="https://leetcode.com/u/matribuk/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-matribuk-FFA116?style=for-the-badge&logo=leetcode&logoColor=white">
+  </a>
   <a href="https://github.com/matribuk" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-matribuk-181717?style=for-the-badge&logo=github&logoColor=white">
   </a>
@@ -60,6 +63,12 @@
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matribuk&layout=compact&theme=default" alt="Antonin's Top Languages" />
+</p>
+
+### 💻 LeetCode Stats
+
+<p align="center">
+  <img src="https://leetcard.jacoblin.cool/matribuk?theme=light&font=Ubuntu" alt="LeetCode Stats"/>
 </p>
 
 ---
