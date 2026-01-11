@@ -37,6 +37,12 @@
 
 - 🎓 **Computer Graphics Studies** — Currently working on advanced 3D rendering projects at Université Laval (IFT3100 Infographie).
 
+- 🔐 **Cybersecurity Course - Université Laval** — Completed hands-on labs in penetration testing and network security (IFT-3201):
+  - **TP1 - Network Analysis (Wireshark)**: Traffic filtering, packet analysis, password interception, ARP poisoning (109.38%)
+  - **TP2 - Footprinting & Scanning (Nmap)**: Network reconnaissance, service enumeration, vulnerability detection (97.5%)
+  - **TP3 - Attack Tools (Metasploit & OpenVAS)**: Password cracking (Hydra, Hashcat), exploitation frameworks, social engineering (SET) (100%)
+  - **TP4 - Buffer Overflow & Web Attacks**: Memory exploitation, Burp Suite, OWASP testing, web application vulnerabilities (81.25%)
+
 ---
 
 ### ⚡ Tech Stack
@@ -51,6 +57,15 @@
   <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/-OpenGL-5586A4?style=flat-square&logo=opengl&logoColor=white" />
+</p>
+
+<p align="center">
+  <strong>Cybersecurity Tools:</strong><br/>
+  <img src="https://img.shields.io/badge/-Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Metasploit-2596CD?style=flat-square" />
+  <img src="https://img.shields.io/badge/-Nmap-4682B4?style=flat-square" />
+  <img src="https://img.shields.io/badge/-Burp Suite-FF6633?style=flat-square" />
+  <img src="https://img.shields.io/badge/-Hydra-000000?style=flat-square" />
 </p>
 
 ---
