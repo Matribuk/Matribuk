@@ -1,5 +1,6 @@
 <h1 align="center">Hi 👋, I'm Antonin Leprest</h1>
 <h3 align="center">Fullstack Developer | AI & R&D Engineer | Computer Graphics Enthusiast</h3>
+<h3 align="center">I'm curious developer, I didn't find my favorite stack yet</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/antonin-leprest-9095b2235" target="_blank">
