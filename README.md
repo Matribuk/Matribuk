@@ -69,23 +69,28 @@
   <img src="https://img.shields.io/badge/-Hydra-000000?style=flat-square" />
 </p>
 
+
 ---
 
-### 📈 GitHub Stats
+<table align="center">
+  <tr>
+    <td align="center" valign="top" style="padding: 10px;">
+      <h3>📈 GitHub Stats</h3>
+      <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+        <img src="https://github-readme-stats.vercel.app/api?username=matribuk&show_icons=true&theme=default" alt="Antonin's GitHub stats" />
+        <br/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matribuk&layout=compact&langs_count=20&theme=default" alt="Antonin's Top Languages" />
+      </div>
+    </td>
+    <td align="center" valign="top" style="padding: 10px;">
+      <h3>💻 LeetCode Stats</h3>
+      <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+        <img src="https://leetcard.jacoblin.cool/matribuk?theme=light&font=Ubuntu" alt="LeetCode Stats"/>
+      </div>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=matribuk&show_icons=true&theme=default" alt="Antonin's GitHub stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matribuk&layout=compact&theme=default" alt="Antonin's Top Languages" />
-</p>
-
-### 💻 LeetCode Stats
-
-<p align="center">
-  <img src="https://leetcard.jacoblin.cool/matribuk?theme=light&font=Ubuntu" alt="LeetCode Stats"/>
-</p>
 
 ---
 
