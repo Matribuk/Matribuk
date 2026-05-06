@@ -30,7 +30,7 @@
   
 - 💻 **Freelance Fullstack Developer at Dreamfetch** — Flutter, Dart, Rust, Docker, PostgreSQL, map servers, performance optimization.
 
-- 🛠 **Ex-CTO & Fullstack at Lebourgmestre** — Led tech strategy, built mobile/web apps, REST APIs, full Dockerized stack.
+- 🛠 **Ex-CTO & Fullstack at Lebourgmestre** — Built and shipped [Ganesh'up](https://github.com/Matribuk/Ganeshup-Portfolio) (iOS, Flutter + Node) end-to-end. Led tech strategy, REST APIs, full Dockerized stack.
 
 - 🤝 **Community & Events** — Event Manager at UliTachi, organizing and leading tech events.
 
@@ -97,6 +97,13 @@
 ---
 
 ### 🏆 Featured Projects
+
+#### 🚀 Shipped Products
+
+- 📱 **[Ganesh'up — Case Study](https://github.com/Matribuk/Ganeshup-Portfolio)** — Neuro-educational learning app I built solo and shipped to the App Store (May 2026, FR + EN)
+  - Stack: Flutter, Node.js + TypeScript, Prisma + PostgreSQL, Docker, Nginx
+  - From Figma mockup to App Store: full-stack, infra, GDPR compliance, deployment
+  - Custom drawing engine, offline-first sync, Sign in with Apple, AES-256-GCM at rest
 
 #### 🎮 Computer Graphics & Game Development
 - 🖼️ **[ULaval-BlenderLike](https://github.com/Matribuk/ULaval-BlenderLike)** — Comprehensive 3D graphics application (C++, OpenGL, openFrameworks) - 2025 project
