@@ -117,6 +117,11 @@
   - Custom map loading and configuration
 
 #### 🔧 DevOps & Backend
+- ☁️ **[Ugram](https://github.com/Matribuk/Laval-UGram)** — Full-stack Instagram-like app (React + NestJS + PostgreSQL) deployed on AWS - 2026 Université Laval project
+  - Production deployment: Elastic Beanstalk + RDS + S3 + CloudFront with HTTPS
+  - CI/CD via GitHub Actions, CloudWatch observability (logs, dashboards, alarms)
+  - Sentry for frontend error tracking and session replay
+
 - 🔒 **[SecureEnv](https://github.com/PoCInnovation/SecureEnv)** — Environment variable management tool (Go) - 2023 project
   - Secure team synchronization with encryption
   - REST APIs and crypto implementation
