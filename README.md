@@ -82,8 +82,8 @@
         <img src="https://github-readme-stats.vercel.app/api?username=matribuk&show_icons=true&theme=default" alt="Antonin's GitHub stats" />
         <br/>
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matribuk&layout=compact&langs_count=20&theme=default" alt="Antonin's Top Languages" />
+        <p><small><a href="https://github.com/anuraghazra/github-readme-stats">@anuraghazra/github-readme-stats</a></small></p>
       </div>
-      <p><small><a href="https://github.com/anuraghazra/github-readme-stats">Stats by @anuraghazra/github-readme-stats</a></small></p>
     </td>
     <td align="center" valign="top" style="padding: 10px;">
       <h3>💻 LeetCode Stats</h3>
