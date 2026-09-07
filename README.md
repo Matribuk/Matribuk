@@ -79,10 +79,9 @@
     <td align="center" valign="top" style="padding: 10px;">
       <h3>📈 GitHub Stats</h3>
       <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
-        <img src="https://github-readme-stats.vercel.app/api?username=matribuk&show_icons=true&theme=default" alt="Antonin's GitHub stats" />
+        <img src="https://github-stats-extended.vercel.app/api?username=matribuk&show_icons=true&theme=default" alt="Antonin's GitHub stats" />
         <br/>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matribuk&layout=compact&langs_count=20&theme=default" alt="Antonin's Top Languages" />
-        <p><small><a href="https://github.com/anuraghazra/github-readme-stats">@anuraghazra/github-readme-stats</a></small></p>
+        <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=matribuk&layout=compact&langs_count=20&theme=default" alt="Antonin's Top Languages" />
       </div>
     </td>
     <td align="center" valign="top" style="padding: 10px;">
