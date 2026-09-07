@@ -30,7 +30,7 @@
   
 - 💻 **Freelance Fullstack Developer at Dreamfetch** — Flutter, Dart, Rust, Docker, PostgreSQL, map servers, performance optimization.
 
-- 🛠 **Ex-CTO & Fullstack at Lebourgmestre** — Built and shipped [Ganesh'up](https://github.com/Matribuk/Ganeshup-Portfolio) (iOS, Flutter + Node) end-to-end. Led tech strategy, REST APIs, full Dockerized stack.
+- 🛠 **Ex-CTO & Fullstack at Lebourgmestre** — Built and shipped [Ganesh'up](https://github.com/Matribuk/Ganeshup-Portfolio) (iOS, Flutter + Node) end-to-end. Led tech strategy, REST APIs, full Do[...]
 
 - 🤝 **Community & Events** — Event Manager at UliTachi, organizing and leading tech events.
 
@@ -83,6 +83,7 @@
         <br/>
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matribuk&layout=compact&langs_count=20&theme=default" alt="Antonin's Top Languages" />
       </div>
+      <p><small><a href="https://github.com/anuraghazra/github-readme-stats">Stats by @anuraghazra/github-readme-stats</a></small></p>
     </td>
     <td align="center" valign="top" style="padding: 10px;">
       <h3>💻 LeetCode Stats</h3>
