@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Antonin Leprest</h1>
-<h3 align="center">Fullstack Developer | AI & R&D Engineer | Computer Graphics Enthusiast</h3>
-<h3 align="center">I'm curious developer, I didn't find my favorite stack yet</h3>
+<h3 align="center">Aspiring Solution Architect | Fullstack &amp; Platform Engineer | Computer Graphics Enthusiast</h3>
+<h3 align="center">I like the decisions more than the tools, and I write down why</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/antonin-leprest-9095b2235" target="_blank">
@@ -128,7 +128,7 @@
   - Design a garden in augmented reality, then get a catalogue of 123 plants with care guidance, in 4 languages
   - Stack: Swift/SwiftUI + ARKit/RoomPlan/SceneKit, Go + Gin, Next.js, Python (FastAPI), MongoDB Atlas, Firebase Auth
   - **I own the infrastructure, backend, delivery and documentation** on a 4-person team (650 of 799 commits); the other members built the SwiftUI screens
-  - See the [infrastructure deep-dive](#-arbore--infrastructure--platform-engineering) below
+  - Architecture decisions and their tradeoffs: [see below](#-how-i-approach-architecture)
 
 - 📱 **[Ganesh'up — Case Study](https://github.com/Matribuk/Ganeshup-Portfolio)** — Neuro-educational learning app I built solo and shipped to the App Store (May 2026, FR + EN)
   - Stack: Flutter, Node.js + TypeScript, Prisma + PostgreSQL, Docker, Nginx
@@ -173,35 +173,18 @@
 
 ---
 
-### 🏗 Arbore — Infrastructure & Platform Engineering
+### 🏗 How I Approach Architecture
 
-The part of Arbore I built end to end. One guiding principle:
+Taken from [Arbore](https://github.com/ArboreTeam/Arbore), where I own the platform side. Each of these is a tradeoff I had to argue for, not a tool I enabled.
 
-> **The repository is the complete definition of a deployment.** `git clone`, supply the secrets, run the deploy with an environment type, and everything is live. Nothing is configured by hand on a machine, because what lives only on a machine drifts without anyone noticing.
+- **The repository is the complete definition of a deployment.** Clone, supply the secrets, run the deploy. Nothing is configured by hand, because what lives only on a machine drifts silently — we lost months to a documented cron that did not match the two actually installed.
+- **Provisioning never touches a machine.** Terraform talks to provider APIs, `ops/` talks over SSH, Compose talks to Docker. Three layers because they use three different channels, and merging them would hide which one failed.
+- **Secrets are encrypted in the repo, with keys left readable.** The inventory is reviewable in a pull request; the values are not. A machine without the decryption key deploys with its existing config rather than failing.
+- **Images are built in CI and pulled on the server, never built there.** A deploy becomes a pull and a restart, and the running commit is always traceable to a SHA.
+- **Storage is an interface, not a vendor.** Filesystem, S3, R2 and MinIO behind one contract, so moving providers is a configuration change instead of a migration.
+- **Decisions are written down.** [C4 architecture views](https://github.com/ArboreTeam/Arbore/blob/main/docs/en/architecture/05-infrastructure.md), [7 ADRs](https://github.com/ArboreTeam/Arbore/tree/main/docs/en/decisions) and runbooks, bilingual and kept at parity, with a CI job that fails the build when a documented code path no longer exists.
 
-**Infrastructure as Code — three layers, three channels**
-
-| Layer | Channel | Creates |
-|---|---|---|
-| **Terraform** | provider APIs | DNS zone (9 records), Cloudflare R2 bucket |
-| **`ops/` + `deploy.sh`** | SSH into an existing machine | packages, crontab, systemd units, nginx, secrets |
-| **Docker Compose** | local Docker daemon | the application containers |
-
-- ☁️ **Cloudflare** — DNS, CDN, Full strict HTTPS, origin firewall restricting the VPS to Cloudflare IPs only
-- 🪣 **R2 object storage** behind a `StorageProvider` abstraction (filesystem / S3 / R2 / MinIO from one env var), serving 369 objects and 4.5 GB of 3D models, with per-operation rate and size guards
-- 🔐 **SOPS + age encrypted secrets** committed to the repo — values encrypted, keys readable, so the inventory is reviewable in a PR while the values are not. One key per environment; a machine without the key deploys with its existing config instead of failing
-- 🐳 **Two independent stacks on one VPS** (prod and dev), separate ports, checkouts and env files, fronted by nginx
-- 📦 **Images built in CI, pulled on the VPS** — never built on the server. Tagged by commit SHA, with retention and orphan purge
-
-**CI/CD & supply chain** — 8 GitHub Actions workflows: build and test matrix, CodeQL (Go + Python + Swift), Trivy scanning, Terraform plan, documentation drift detection, and a route inventory test that fails if an endpoint changes its authentication class.
-
-**Observability** — Sentry across iOS, web and Go backend. The instrumentation found three real defects within 48 hours that no code review had caught, including a stable install identifier leaking through anonymous crash reports, and a 2-second main-thread freeze whose stack contained no application frames at all.
-
-**Mobile delivery** — fastlane lanes for internal and public TestFlight, with dSYMs uploaded to Sentry **before** the binary reaches a tester, and release notes in 4 languages validated by a style check that refuses to ship.
-
-**Privacy & GDPR** — opt-in anonymous crash reporting, account export and deletion, IP addresses truncated in logs and never stored, and a reconciliation job that purges Mongo when Firebase deletes an account.
-
-**Documentation** — 90 bilingual markdown files (FR/EN at parity): C4 architecture views, user flows, per-screen specs, 7 ADRs, and operations runbooks. A CI job fails the build when a documented code path no longer exists.
+The full reasoning lives in [Arbore's documentation](https://github.com/ArboreTeam/Arbore/blob/main/docs/README.md) — 90 files, architecture through operations.
 
 ---
 
