@@ -127,7 +127,7 @@
 - 🌱 **[Arbore](https://github.com/ArboreTeam/Arbore)** — AR gardening app in public TestFlight beta · [web companion](https://web.arbore.app) · [join the beta](https://testflight.apple.com/join/xyUGxhKH)
   - Design a garden in augmented reality, then get a catalogue of 123 plants with care guidance, in 4 languages
   - Stack: Swift/SwiftUI + ARKit/RoomPlan/SceneKit, Go + Gin, Next.js, Python (FastAPI), MongoDB Atlas, Firebase Auth
-  - **I own the infrastructure, backend, delivery and documentation** on a 4-person team (650 of 799 commits); the other members built the SwiftUI screens
+  - **I own the platform side** — infrastructure, backend, release engineering and documentation — on a four-person team building the iOS app
   - Architecture decisions and their tradeoffs: [see below](#-how-i-approach-architecture)
 
 - 📱 **[Ganesh'up — Case Study](https://github.com/Matribuk/Ganeshup-Portfolio)** — Neuro-educational learning app I built solo and shipped to the App Store (May 2026, FR + EN)
