@@ -58,8 +58,32 @@
   <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/-OpenGL-5586A4?style=flat-square&logo=opengl&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Swift-FA7343?style=flat-square&logo=swift&logoColor=white" />
   <img src="https://img.shields.io/badge/-Haskell-5D4F85?style=flat-square&logo=haskell&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Swift-FA7343?style=flat-square&logo=swift&logoColor=white" />
+</p>
+
+<p align="center">
+  <strong>Infrastructure &amp; Cloud:</strong><br/>
+  <img src="https://img.shields.io/badge/-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" />
+  <img src="https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/-nginx-009639?style=flat-square&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/-Sentry-362D59?style=flat-square&logo=sentry&logoColor=white" />
+  <img src="https://img.shields.io/badge/-SOPS%20%2B%20age-4B275F?style=flat-square" />
+  <img src="https://img.shields.io/badge/-fastlane-00F200?style=flat-square&logo=fastlane&logoColor=black" />
+</p>
+
+<p align="center">
+  <strong>Mobile &amp; 3D:</strong><br/>
+  <img src="https://img.shields.io/badge/-SwiftUI-0071E3?style=flat-square&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/-ARKit-000000?style=flat-square&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/-RealityKit%20%2F%20SceneKit-1C1C1E?style=flat-square&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/-USDZ%20%2F%20glTF-FF6F00?style=flat-square" />
+  <img src="https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
 </p>
 
 <p align="center">
@@ -99,6 +123,12 @@
 ### 🏆 Featured Projects
 
 #### 🚀 Shipped Products
+
+- 🌱 **[Arbore](https://github.com/ArboreTeam/Arbore)** — AR gardening app in public TestFlight beta · [web companion](https://web.arbore.app) · [join the beta](https://testflight.apple.com/join/xyUGxhKH)
+  - Design a garden in augmented reality, then get a catalogue of 123 plants with care guidance, in 4 languages
+  - Stack: Swift/SwiftUI + ARKit/RoomPlan/SceneKit, Go + Gin, Next.js, Python (FastAPI), MongoDB Atlas, Firebase Auth
+  - **I own the infrastructure, backend, delivery and documentation** on a 4-person team (650 of 799 commits); the other members built the SwiftUI screens
+  - See the [infrastructure deep-dive](#-arbore--infrastructure--platform-engineering) below
 
 - 📱 **[Ganesh'up — Case Study](https://github.com/Matribuk/Ganeshup-Portfolio)** — Neuro-educational learning app I built solo and shipped to the App Store (May 2026, FR + EN)
   - Stack: Flutter, Node.js + TypeScript, Prisma + PostgreSQL, Docker, Nginx
@@ -143,12 +173,45 @@
 
 ---
 
+### 🏗 Arbore — Infrastructure & Platform Engineering
+
+The part of Arbore I built end to end. One guiding principle:
+
+> **The repository is the complete definition of a deployment.** `git clone`, supply the secrets, run the deploy with an environment type, and everything is live. Nothing is configured by hand on a machine, because what lives only on a machine drifts without anyone noticing.
+
+**Infrastructure as Code — three layers, three channels**
+
+| Layer | Channel | Creates |
+|---|---|---|
+| **Terraform** | provider APIs | DNS zone (9 records), Cloudflare R2 bucket |
+| **`ops/` + `deploy.sh`** | SSH into an existing machine | packages, crontab, systemd units, nginx, secrets |
+| **Docker Compose** | local Docker daemon | the application containers |
+
+- ☁️ **Cloudflare** — DNS, CDN, Full strict HTTPS, origin firewall restricting the VPS to Cloudflare IPs only
+- 🪣 **R2 object storage** behind a `StorageProvider` abstraction (filesystem / S3 / R2 / MinIO from one env var), serving 369 objects and 4.5 GB of 3D models, with per-operation rate and size guards
+- 🔐 **SOPS + age encrypted secrets** committed to the repo — values encrypted, keys readable, so the inventory is reviewable in a PR while the values are not. One key per environment; a machine without the key deploys with its existing config instead of failing
+- 🐳 **Two independent stacks on one VPS** (prod and dev), separate ports, checkouts and env files, fronted by nginx
+- 📦 **Images built in CI, pulled on the VPS** — never built on the server. Tagged by commit SHA, with retention and orphan purge
+
+**CI/CD & supply chain** — 8 GitHub Actions workflows: build and test matrix, CodeQL (Go + Python + Swift), Trivy scanning, Terraform plan, documentation drift detection, and a route inventory test that fails if an endpoint changes its authentication class.
+
+**Observability** — Sentry across iOS, web and Go backend. The instrumentation found three real defects within 48 hours that no code review had caught, including a stable install identifier leaking through anonymous crash reports, and a 2-second main-thread freeze whose stack contained no application frames at all.
+
+**Mobile delivery** — fastlane lanes for internal and public TestFlight, with dSYMs uploaded to Sentry **before** the binary reaches a tester, and release notes in 4 languages validated by a style check that refuses to ship.
+
+**Privacy & GDPR** — opt-in anonymous crash reporting, account export and deletion, IP addresses truncated in logs and never stored, and a reconciliation job that purges Mongo when Firebase deletes an account.
+
+**Documentation** — 90 bilingual markdown files (FR/EN at parity): C4 architecture views, user flows, per-screen specs, 7 ADRs, and operations runbooks. A CI job fails the build when a documented code path no longer exists.
+
+---
+
 ### 💡 What I'm Working On
 
-- 🎨 Advanced ray tracing and PBR rendering techniques
+- 🌱 **Arbore** — running the platform side: infrastructure as code, release engineering, observability, and the 3D asset pipeline
+- 🏗 Treating the repository as the single source of truth for a deployment, so nothing lives only on a machine
+- 📡 Production observability as a design tool, not an afterthought: the first real events usually disprove something a review approved
+- 🎨 Real-time 3D, ray tracing and PBR rendering
 - 🤖 AI integration with MCP (Model Context Protocol)
-- 🐳 Cloud-native architectures with Docker
-- 🎮 Real-time 3D graphics and game engine development
 
 ---
 
