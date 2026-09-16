@@ -28,7 +28,7 @@
   - Designing and improving **NLP pipelines**, **annotating** gold data and generating silver datasets for embedding model, also **training** and **evaluation**.
   - Actively involved in implementing **Model Context Protocol (MCP)**—a standardized method that connects LLMs to internal data tools, enabling secure, context-aware AI integrations.
   
-- 💻 **Freelance Fullstack Developer at Dreamfetch** — Flutter, Dart, Rust, Docker, PostgreSQL, map servers, performance optimization.
+- 💻 **Freelance Fullstack Developer at [Dreamfetch](https://dreamfetch.fr)** — Flutter, Dart, Rust, Docker, PostgreSQL, map servers, performance optimization.
 
 - 🛠 **Ex-CTO & Fullstack at Lebourgmestre** — Built and shipped [Ganesh'up](https://github.com/Matribuk/Ganeshup-Portfolio) (iOS, Flutter + Node) end-to-end. Led tech strategy, REST APIs, full Do[...]
 
