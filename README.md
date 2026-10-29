@@ -124,13 +124,13 @@
 
 #### 🚀 Shipped Products
 
-- 🌱 **[Arbore](https://github.com/ArboreTeam/Arbore)** — AR gardening app in public TestFlight beta · [web companion](https://web.arbore.app) · [join the beta](https://testflight.apple.com/join/xyUGxhKH)
+- 🌱 **[Arbore](https://github.com/ArboreTeam/Arbore)** — AR gardening app, now available on the [App Store](https://apps.apple.com/fr/app/arbore/id6762100087?l=en-GB) · [web companion](https://web.arbore.app)
   - Design a garden in augmented reality, then get a catalogue of 123 plants with care guidance, in 4 languages
   - Stack: Swift/SwiftUI + ARKit/RoomPlan/SceneKit, Go + Gin, Next.js, Python (FastAPI), MongoDB Atlas, Firebase Auth
   - **I own the platform side** — infrastructure, backend, release engineering and documentation — on a four-person team building the iOS app
   - Architecture decisions and their tradeoffs: [see below](#-how-i-approach-architecture)
 
-- 📱 **[Ganesh'up — Case Study](https://github.com/Matribuk/Ganeshup-Portfolio)** — Neuro-educational learning app I built solo and shipped to the App Store (May 2026, FR + EN)
+- 📱 **[Ganesh'up — Case Study](https://github.com/Matribuk/Ganeshup-Portfolio)** — Neuro-educational learning app I built solo, now available on the [App Store](https://apps.apple.com/fr/app/ganeshup/id6755841790?l=en-GB) (FR + EN)
   - Stack: Flutter, Node.js + TypeScript, Prisma + PostgreSQL, Docker, Nginx
   - From Figma mockup to App Store: full-stack, infra, GDPR compliance, deployment
   - Custom drawing engine, offline-first sync, Sign in with Apple, AES-256-GCM at rest
